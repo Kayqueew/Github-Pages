@@ -55,3 +55,7 @@ $ npm i
 # Run project
 $ npm run dev
 ```
+
+</br> 
+
+### Feito por Kayque Roger [contact](https://www.linkedin.com/in/kayque-roger/)
