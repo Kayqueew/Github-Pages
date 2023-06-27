@@ -31,11 +31,13 @@ projeto foi feito com vite e TypeScript
 
 - zod
 - Styled-components
-- React-hook-form
-- axios
+- React-Hook-Form
+- Axios
 - use-context-selector
-- phosphor-react
-- sweetalert2
+- Phosphor-React
+- Sweetalert2
+- React-Markdown
+
 
 
 </br>
