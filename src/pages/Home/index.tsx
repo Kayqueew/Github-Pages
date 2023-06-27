@@ -9,10 +9,10 @@ import {
 import GitPerfil from '../../assets/GitPerfil.svg'
 import follower from '../../assets/follower.svg'
 import GitLink from '../../assets/GitLink.svg'
-import { SearchForm } from './componests/SearchForm'
+import { SearchForm } from './components/SearchForm'
 import { useContext } from 'react'
 import { BlogContext } from '../../contexts/BlogContext'
-import { Blog } from '../Home/componests/blog'
+import { Blog } from '../Home/components/blog'
 import { Loading } from '../../components/loanding'
 
 export function Home() {
@@ -45,7 +45,9 @@ export function Home() {
           </Infos>
         </InfoProfile>
       </ProfileContainer>
+
       <SearchForm />
+
       {removeLoading ? (
         <Loading />
       ) : (

@@ -58,6 +58,14 @@ export const GitBlog = styled.div`
   @media (max-width: 680px) {
     width: 28rem;
   }
+
+  @media (max-width: 450px) {
+    width: 24rem;
+  }
+
+  @media (max-width: 375px) {
+    width: 21rem;
+  }
 `
 
 export const BlogText = styled.div`

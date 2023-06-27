@@ -20,6 +20,7 @@ export const ProfileContainer = styled.div`
   padding: 32px 40px;
 
   background: ${(props) => props.theme['base-profile']};
+  box-shadow: 2px -1px 19px 4px rgba(0, 0, 0, 0.26);
 
   img {
     width: 9.24rem;
@@ -29,6 +30,16 @@ export const ProfileContainer = styled.div`
   @media (max-width: 540px) {
     padding: 30px;
     gap: 25px;
+  }
+
+  @media (max-width: 450px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+    max-width: 340px;
+    height: auto;
   }
 `
 
@@ -49,6 +60,12 @@ export const InfoProfile = styled.div`
     span {
       font-size: 14px;
     }
+  }
+
+  @media (max-width: 450px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `
 
@@ -89,6 +106,12 @@ export const HeaderProfile = styled.div`
       font-size: 12px;
     }
   }
+
+  @media (max-width: 450px) {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 export const Infos = styled.div`
@@ -110,6 +133,11 @@ export const Infos = styled.div`
     p {
       font-size: 14px;
     }
+  }
+
+  @media (max-width: 450px) {
+    display: flex;
+    margin-top: 10px;
   }
 `
 

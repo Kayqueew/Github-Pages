@@ -6,6 +6,7 @@ import {
   PostInfos,
   TitleInfo,
 } from './styles'
+import Date from '../../assets/date.svg'
 import GitPerfil from '../../assets/GitPerfil.svg'
 import Coment from '../../assets/coment.svg'
 import GitLink from '../../assets/GitLink.svg'
@@ -68,7 +69,7 @@ export function Post() {
                 {author}
               </p>
               <p>
-                {/* <img src={Date} alt="" /> */} Há {formattedDate}
+                <img src={Date} alt="" /> Há {formattedDate}
               </p>
               <p>
                 <img src={Coment} alt="" /> {post.comments} comentários
@@ -79,26 +80,30 @@ export function Post() {
       </PostInfo>
 
       <PostInfos>
-        <div>
-          <ReactMarkdown
-            components={{
-              p: ({ ...props }) => (
-                <p
-                  style={{
-                    color: '#AFC2D4',
-                    fontWeight: 400,
-                    lineHeight: '25.6px',
-                    margin: '15px 0',
-                    textAlign: 'justify',
-                  }}
-                  {...props}
-                />
-              ),
-            }}
-          >
-            {post.body}
-          </ReactMarkdown>
-        </div>
+        {removeLoading ? (
+          <Loading />
+        ) : (
+          <div>
+            <ReactMarkdown
+              components={{
+                p: ({ ...props }) => (
+                  <p
+                    style={{
+                      color: '#AFC2D4',
+                      fontWeight: 400,
+                      lineHeight: '25.6px',
+                      margin: '15px 0',
+                      textAlign: 'justify',
+                    }}
+                    {...props}
+                  />
+                ),
+              }}
+            >
+              {post.body}
+            </ReactMarkdown>
+          </div>
+        )}
       </PostInfos>
     </PostContainer>
   )

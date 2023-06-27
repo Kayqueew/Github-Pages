@@ -14,8 +14,20 @@ export const PostInfo = styled.div`
   height: 10rem;
   border-radius: 10px;
   padding: 32px;
+  margin-bottom: 20px;
+  box-shadow: 2px -1px 19px 4px rgba(0, 0, 0, 0.26);
 
   background: ${(props) => props.theme['base-profile']};
+
+  @media (max-width: 450px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+    max-width: 340px;
+    height: auto;
+  }
 `
 
 export const HeaderInfo = styled.header`
@@ -47,6 +59,12 @@ export const HeaderInfo = styled.header`
 
   a:hover {
     border-bottom: 1px solid ${({ theme }) => theme.blue};
+  }
+
+  @media (max-width: 450px) {
+    display: flex;
+    gap: 90px;
+    margin-bottom: 10px;
   }
 `
 
@@ -80,6 +98,15 @@ export const Infos = styled.div`
     font-size: 16px;
 
     color: ${(props) => props.theme['base-span']};
+  }
+
+  @media (max-width: 450px) {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+    margin-top: 35px;
+    gap: 10px;
   }
 `
 
